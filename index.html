@@ -27,7 +27,7 @@ body{font-family:'Montserrat',sans-serif;background:var(--crema);color:var(--gra
 
 /* ── HERO ── */
 .hero{min-height:100vh;background:var(--grad);display:flex;flex-direction:column;position:relative;overflow:hidden}
-.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 20% 70%,rgba(255,220,130,.3) 0%,transparent 55%),radial-gradient(ellipse at 85% 15%,rgba(255,80,160,.2) 0%,transparent 50%);pointer-events:none}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 20% 70%,rgba(255,220,130,.3) 0%,transparent 55%),radial-gradient(ellipse at 85% 15%,rgba(255,80,160,.2) 0%,tran[...]
 .hero-top{display:flex;align-items:center;justify-content:space-between;padding:1.4rem 2.5rem;position:relative;z-index:10}
 .logo-wrap{display:flex;align-items:center;gap:.7rem}
 .logo-img{width:44px;height:44px;border-radius:50%;object-fit:cover;object-position:top;border:2.5px solid rgba(255,255,255,.7)}
@@ -35,14 +35,14 @@ body{font-family:'Montserrat',sans-serif;background:var(--crema);color:var(--gra
 .hnav{display:flex;gap:2rem;list-style:none}
 .hnav a{color:rgba(255,255,255,.85);text-decoration:none;font-size:.84rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;transition:color .2s}
 .hnav a:hover,.hnav a.act{color:white}
-.cart-btn{background:rgba(255,255,255,.22);backdrop-filter:blur(8px);border:1.5px solid rgba(255,255,255,.45);color:white;padding:.45rem 1rem;border-radius:20px;cursor:pointer;font-family:'Montserrat',sans-serif;font-size:.82rem;font-weight:700;display:flex;align-items:center;gap:.5rem;transition:background .2s}
+.cart-btn{background:rgba(255,255,255,.22);backdrop-filter:blur(8px);border:1.5px solid rgba(255,255,255,.45);color:white;padding:.45rem 1rem;border-radius:20px;cursor:pointer;font-family:'Montserrat'[...]
 .cart-btn:hover{background:rgba(255,255,255,.35)}
 .cc{background:white;color:var(--rosa);border-radius:50%;width:18px;height:18px;font-size:.68rem;display:flex;align-items:center;justify-content:center;font-weight:900}
 .hero-body{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem;text-align:center;position:relative;z-index:5}
 .hero-tit{font-size:clamp(4rem,13vw,9rem);font-weight:900;color:white;line-height:.95;letter-spacing:-.03em;text-shadow:0 4px 30px rgba(0,0,0,.08);margin-bottom:.9rem}
 .hero-sub{color:rgba(255,255,255,.8);font-size:1rem;letter-spacing:.15em;text-transform:uppercase;font-weight:600;margin-bottom:3rem}
 .hbtns{display:flex;gap:1.2rem;flex-wrap:wrap;justify-content:center}
-.hb{display:flex;flex-direction:column;align-items:center;gap:.5rem;background:rgba(255,255,255,.18);backdrop-filter:blur(14px);border:1.5px solid rgba(255,255,255,.4);color:white;text-decoration:none;padding:1.6rem 2rem;border-radius:22px;min-width:210px;transition:all .25s}
+.hb{display:flex;flex-direction:column;align-items:center;gap:.5rem;background:rgba(255,255,255,.18);backdrop-filter:blur(14px);border:1.5px solid rgba(255,255,255,.4);color:white;text-decoration:none[...]
 .hb:hover{background:rgba(255,255,255,.32);transform:translateY(-5px);box-shadow:0 14px 36px rgba(0,0,0,.1)}
 .hb-ico{font-size:2.2rem}
 .hb-tit{font-size:1.05rem;font-weight:900}
@@ -56,7 +56,7 @@ body{font-family:'Montserrat',sans-serif;background:var(--crema);color:var(--gra
 .sl-img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
 .sl-img-overlay{position:absolute;inset:0;background:linear-gradient(to right,transparent 60%,white)}
 .sl-txt{padding:3.5rem 3rem;display:flex;flex-direction:column;justify-content:center;background:white}
-.sl-tag{display:inline-block;background:var(--grad);color:white;font-size:.7rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase;padding:.3rem .9rem;border-radius:20px;margin-bottom:1.4rem}
+.sl-tag{display:inline-block;background:var(--grad);color:white;font-size:.7rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase;padding:.3rem .9rem;border-radius:20px;margin-bottom:1.4re[...]
 .sl-txt h2{font-family:'Montserrat',sans-serif;font-size:clamp(1.8rem,3vw,2.6rem);line-height:1.15;margin-bottom:1.2rem}
 .sl-txt h2 em{font-style:italic;color:var(--rosa)}
 .sl-txt p{color:var(--gris);font-size:.92rem;line-height:1.85;margin-bottom:.8rem}
@@ -67,12 +67,12 @@ body{font-family:'Montserrat',sans-serif;background:var(--crema);color:var(--gra
 .sl-sep{width:1px;background:rgba(255,63,164,.15);align-self:stretch}
 
 /* ── NAV FIJA ── */
-.navf{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(255,248,252,.96);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,63,164,.12);padding:0 2.5rem;height:62px;display:flex;align-items:center;justify-content:space-between;opacity:0;pointer-events:none;transition:opacity .3s}
+.navf{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(255,248,252,.96);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,63,164,.12);padding:0 2.5rem;height:62px;display:flex[...]
 .navf.vis{opacity:1;pointer-events:all}
 .navf-links{display:flex;gap:1.8rem;list-style:none}
 .navf-links a{color:var(--gris);text-decoration:none;font-size:.82rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;transition:color .2s}
 .navf-links a:hover{color:var(--rosa)}
-.cart-f{background:var(--rosa);color:white;border:none;padding:.42rem .9rem;border-radius:20px;cursor:pointer;font-family:'Montserrat',sans-serif;font-size:.8rem;font-weight:700;display:flex;align-items:center;gap:.45rem;transition:background .2s}
+.cart-f{background:var(--rosa);color:white;border:none;padding:.42rem .9rem;border-radius:20px;cursor:pointer;font-family:'Montserrat',sans-serif;font-size:.8rem;font-weight:700;display:flex;align-ite[...]
 .cart-f:hover{background:var(--rosa2)}
 .cart-f .cc{background:white;color:var(--rosa)}
 
@@ -88,7 +88,7 @@ body{font-family:'Montserrat',sans-serif;background:var(--crema);color:var(--gra
 
 /* ── FILTROS ── */
 .fils{display:flex;gap:.6rem;flex-wrap:wrap;justify-content:center;margin-bottom:2.5rem}
-.fb{background:transparent;border:1.5px solid rgba(255,63,164,.3);color:var(--gris);padding:.38rem 1.1rem;font-size:.78rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;cursor:pointer;border-radius:20px;font-family:'Montserrat',sans-serif;transition:all .2s}
+.fb{background:transparent;border:1.5px solid rgba(255,63,164,.3);color:var(--gris);padding:.38rem 1.1rem;font-size:.78rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;cursor:pointer;[...]
 .fb.on,.fb:hover{background:var(--rosa);color:white;border-color:var(--rosa)}
 
 /* ── GRID OBRAS ── */
@@ -97,7 +97,7 @@ body{font-family:'Montserrat',sans-serif;background:var(--crema);color:var(--gra
 .ocard:hover{transform:scale(1.02);z-index:2}
 .oimg{width:100%;aspect-ratio:1/1;object-fit:cover;display:block}
 .oph{width:100%;aspect-ratio:1/1;display:none;align-items:center;justify-content:center;font-size:4rem}
-.ooverlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.75) 0%,transparent 55%);opacity:0;transition:opacity .3s;display:flex;flex-direction:column;justify-content:flex-end;padding:1.5rem}
+.ooverlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.75) 0%,transparent 55%);opacity:0;transition:opacity .3s;display:flex;flex-direction:column;justify-content:flex-end;p[...]
 .ocard:hover .ooverlay{opacity:1}
 .ov-tit{font-family:'Montserrat',sans-serif;font-size:1.15rem;color:white;margin-bottom:.3rem}
 .ov-desc{font-size:.78rem;color:rgba(255,255,255,.8);margin-bottom:.9rem}
@@ -116,16 +116,16 @@ body{font-family:'Montserrat',sans-serif;background:var(--crema);color:var(--gra
 .m-tit{font-family:'Montserrat',sans-serif;font-size:1.4rem;margin-bottom:.3rem}
 .m-desc{color:var(--gris);font-size:.88rem;margin-bottom:1.2rem;line-height:1.7}
 .mopt label{display:block;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gris);margin-bottom:.3rem;font-weight:700}
-.mopt select{width:100%;border:1.5px solid rgba(255,63,164,.2);padding:.6rem .9rem;font-family:'Montserrat',sans-serif;font-size:.9rem;color:var(--grafito);border-radius:10px;outline:none;background:white;margin-bottom:.9rem;cursor:pointer}
+.mopt select{width:100%;border:1.5px solid rgba(255,63,164,.2);padding:.6rem .9rem;font-family:'Montserrat',sans-serif;font-size:.9rem;color:var(--grafito);border-radius:10px;outline:none;background:w[...]
 .mopt select:focus{border-color:var(--rosa)}
 .mfoot{display:flex;align-items:center;justify-content:space-between;margin-top:.5rem}
 .m-precio{font-family:'Montserrat',sans-serif;font-size:1.5rem;color:var(--rosa);font-weight:700}
-.btn-xm{position:absolute;top:1rem;right:1rem;background:rgba(255,255,255,.9);border:none;width:36px;height:36px;border-radius:50%;font-size:1.1rem;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.btn-xm{position:absolute;top:1rem;right:1rem;background:rgba(255,255,255,.9);border:none;width:36px;height:36px;border-radius:50%;font-size:1.1rem;cursor:pointer;display:flex;align-items:center;justi[...]
 
 /* ── BOTONES ── */
-.br{background:var(--rosa);color:white;border:none;padding:.8rem 1.8rem;border-radius:30px;font-family:'Montserrat',sans-serif;font-size:.88rem;font-weight:800;cursor:pointer;transition:all .2s;text-decoration:none;display:inline-block}
+.br{background:var(--rosa);color:white;border:none;padding:.8rem 1.8rem;border-radius:30px;font-family:'Montserrat',sans-serif;font-size:.88rem;font-weight:800;cursor:pointer;transition:all .2s;text-d[...]
 .br:hover{background:var(--rosa2);transform:translateY(-2px)}
-.bo{background:transparent;color:var(--rosa);border:2px solid var(--rosa);padding:.75rem 1.6rem;border-radius:30px;font-family:'Montserrat',sans-serif;font-size:.88rem;font-weight:800;cursor:pointer;transition:all .2s;text-decoration:none;display:inline-block}
+.bo{background:transparent;color:var(--rosa);border:2px solid var(--rosa);padding:.75rem 1.6rem;border-radius:30px;font-family:'Montserrat',sans-serif;font-size:.88rem;font-weight:800;cursor:pointer;t[...]
 .bo:hover{background:var(--rosa);color:white}
 
 /* ── RECORDATORIOS ── */
@@ -136,26 +136,26 @@ body{font-family:'Montserrat',sans-serif;background:var(--crema);color:var(--gra
 .rtit{font-family:'Montserrat',sans-serif;font-size:1.15rem;margin-bottom:.4rem}
 .rdesc{font-size:.81rem;color:var(--gris);line-height:1.6;margin-bottom:1rem}
 .ropt label{display:block;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gris);margin-bottom:.3rem;font-weight:700;text-align:left}
-.ropt select{width:100%;border:1.5px solid rgba(255,63,164,.2);padding:.5rem .8rem;font-family:'Montserrat',sans-serif;font-size:.85rem;color:var(--grafito);border-radius:10px;outline:none;background:white;margin-bottom:.8rem;cursor:pointer}
+.ropt select{width:100%;border:1.5px solid rgba(255,63,164,.2);padding:.5rem .8rem;font-family:'Montserrat',sans-serif;font-size:.85rem;color:var(--grafito);border-radius:10px;outline:none;background:[...]
 .ropt select:focus{border-color:var(--rosa)}
 .rprecio{font-family:'Montserrat',sans-serif;font-size:1.1rem;color:var(--rosa);font-weight:700;margin-bottom:.9rem}
 
 /* ── ILUSTRACIONES PERSONALIZADAS ── */
 .il-tabs{display:flex;gap:1rem;justify-content:center;margin-bottom:2.5rem;flex-wrap:wrap}
-.il-tab{background:rgba(255,255,255,.12);border:1.5px solid rgba(255,255,255,.3);color:rgba(255,255,255,.8);padding:.6rem 1.6rem;border-radius:20px;font-family:'Montserrat',sans-serif;font-size:.88rem;font-weight:700;cursor:pointer;transition:all .2s}
+.il-tab{background:rgba(255,255,255,.12);border:1.5px solid rgba(255,255,255,.3);color:rgba(255,255,255,.8);padding:.6rem 1.6rem;border-radius:20px;font-family:'Montserrat',sans-serif;font-size:.88rem[...]
 .il-tab.on{background:white;color:var(--rosa);border-color:white}
 .il-panel{display:none}
 .il-panel.on{display:block}
 .ilwrap{max-width:700px;margin:0 auto}
 .pasos{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1.2rem;margin-bottom:2.5rem}
 .paso{text-align:center;padding:1.2rem .8rem}
-.pn{width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.15);border:2px solid rgba(255,255,255,.4);color:white;font-size:1.1rem;font-weight:900;display:flex;align-items:center;justify-content:center;margin:0 auto .7rem}
+.pn{width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.15);border:2px solid rgba(255,255,255,.4);color:white;font-size:1.1rem;font-weight:900;display:flex;align-items:center;justify[...]
 .paso h4{font-size:1rem;font-weight:800;color:white;margin-bottom:.3rem}
 .paso p{font-size:.8rem;color:rgba(255,255,255,.65);line-height:1.6}
 .cbox{background:rgba(255,255,255,.08);border:1.5px solid rgba(255,255,255,.2);backdrop-filter:blur(8px);border-radius:20px;padding:1.8rem;margin-bottom:2rem}
 .cbox .fg label{color:rgba(255,255,255,.75);font-weight:700}
 .cbox .fg input[type=range]{accent-color:var(--rosa);width:100%;cursor:pointer;margin-top:.3rem}
-.cbox .fg select{background:rgba(255,255,255,.12);border:1.5px solid rgba(255,255,255,.25);color:white;border-radius:10px;padding:.6rem .9rem;font-family:'Montserrat',sans-serif;font-size:.88rem;width:100%;outline:none;cursor:pointer}
+.cbox .fg select{background:rgba(255,255,255,.12);border:1.5px solid rgba(255,255,255,.25);color:white;border-radius:10px;padding:.6rem .9rem;font-family:'Montserrat',sans-serif;font-size:.88rem;width[...]
 .cbox .fg select option{background:#1A1A2E;color:white}
 .sl-lab{display:flex;justify-content:space-between;font-size:.7rem;color:rgba(255,255,255,.5);margin-top:.2rem}
 .presup{background:var(--grad);border-radius:16px;padding:1.4rem;text-align:center;margin-top:1.2rem}
@@ -180,7 +180,7 @@ body{font-family:'Montserrat',sans-serif;background:var(--crema);color:var(--gra
 .frow{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
 .fg{margin-bottom:1rem}
 .fg label{display:block;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gris);margin-bottom:.3rem;font-weight:700}
-.fg input,.fg textarea,.fg select{width:100%;background:white;border:1.5px solid rgba(255,63,164,.2);padding:.68rem 1rem;font-family:'Montserrat',sans-serif;font-size:.9rem;color:var(--grafito);border-radius:10px;outline:none;transition:border-color .2s}
+.fg input,.fg textarea,.fg select{width:100%;background:white;border:1.5px solid rgba(255,63,164,.2);padding:.68rem 1rem;font-family:'Montserrat',sans-serif;font-size:.9rem;color:var(--grafito);border[...]
 .fg input:focus,.fg textarea:focus,.fg select:focus{border-color:var(--rosa)}
 .fg textarea{min-height:100px;resize:vertical}
 .fsuc{display:none;background:rgba(255,63,164,.08);border:1px solid var(--rosa2);color:var(--rosa);padding:1rem;border-radius:10px;font-weight:700;margin-top:1rem;text-align:center}
@@ -192,14 +192,14 @@ body{font-family:'Montserrat',sans-serif;background:var(--crema);color:var(--gra
 .contacto-head h3{font-family:'Montserrat',sans-serif;font-size:1.6rem;color:white;margin-bottom:.4rem}
 .contacto-head p{font-size:.88rem;color:rgba(255,255,255,.8)}
 .contacto-icons{display:flex;gap:1.5rem;justify-content:center;margin-top:1.2rem}
-.c-icon{background:rgba(255,255,255,.2);backdrop-filter:blur(6px);border:1.5px solid rgba(255,255,255,.3);color:white;padding:.5rem 1rem;border-radius:20px;font-size:.8rem;font-weight:700;text-decoration:none;transition:background .2s}
+.c-icon{background:rgba(255,255,255,.2);backdrop-filter:blur(6px);border:1.5px solid rgba(255,255,255,.3);color:white;padding:.5rem 1rem;border-radius:20px;font-size:.8rem;font-weight:700;text-decorat[...]
 .c-icon:hover{background:rgba(255,255,255,.35)}
 .contacto-body{padding:2rem}
 
 /* ── CARRITO ── */
 .cov{position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:300;opacity:0;pointer-events:none;transition:opacity .3s}
 .cov.op{opacity:1;pointer-events:all}
-.cpanel{position:fixed;top:0;right:0;bottom:0;width:min(420px,100vw);background:white;z-index:301;transform:translateX(100%);transition:transform .35s cubic-bezier(.4,0,.2,1);display:flex;flex-direction:column;box-shadow:-6px 0 40px var(--sombra)}
+.cpanel{position:fixed;top:0;right:0;bottom:0;width:min(420px,100vw);background:white;z-index:301;transform:translateX(100%);transition:transform .35s cubic-bezier(.4,0,.2,1);display:flex;flex-directi[...]
 .cpanel.op{transform:translateX(0)}
 .chd{padding:1.4rem 1.5rem;border-bottom:1px solid #FFE8F5;display:flex;align-items:center;justify-content:space-between}
 .chd h3{font-family:'Montserrat',sans-serif;font-size:1.25rem}
@@ -218,7 +218,7 @@ body{font-family:'Montserrat',sans-serif;background:var(--crema);color:var(--gra
 .cft{padding:1.2rem 1.5rem;border-top:1px solid #FFE8F5}
 .trow{display:flex;justify-content:space-between;font-family:'Montserrat',sans-serif;font-size:1.05rem;margin-bottom:.35rem}
 .tnota{font-size:.74rem;color:var(--gris);margin-bottom:1rem;font-style:italic}
-.bpag{width:100%;background:var(--grad);color:white;border:none;padding:1rem;font-family:'Montserrat',sans-serif;font-size:1rem;font-weight:900;cursor:pointer;border-radius:30px;transition:opacity .2s}
+.bpag{width:100%;background:var(--grad);color:white;border:none;padding:1rem;font-family:'Montserrat',sans-serif;font-size:1rem;font-weight:900;cursor:pointer;border-radius:30px;transition:opacit[...]
 .bpag:hover{opacity:.9}
 
 footer{background:#111;color:rgba(255,255,255,.4);text-align:center;padding:2rem;font-size:.78rem;letter-spacing:.04em}
@@ -259,7 +259,7 @@ footer span{color:var(--rosa)}
     <button class="cart-btn" onclick="toggleCart()">Carrito <span class="cc" id="cc1">0</span></button>
   </div>
   <div class="hero-body">
-    <h1 class="hero-tit">Bienvenida!</h1>
+    <h1 class="hero-tit">¡Bienvenido!</h1>
     <p class="hero-sub">Arte digital hecho con cariño · Córdoba</p>
     <div class="hbtns">
       <a href="#laminas" class="hb"><span class="hb-ico">&#128444;</span><span class="hb-tit">Láminas y cuadros</span><span class="hb-sub">Elige tamaño y acabado</span></a>
@@ -278,10 +278,10 @@ footer span{color:var(--rosa)}
       <div class="sl-img-overlay"></div>
     </div>
     <div class="sl-txt">
-      <span class="sl-tag">La artista detras de LourBorre</span>
+      <span class="sl-tag">La artista detrás de LourBorre</span>
       <h2>Hola, soy <em>Lourdes</em>.<br>Diseño con alma.</h2>
       <p>Empecé estudiando Ingeniería Mecánica, pero acabé enamorándome del diseño. Lo cambié todo en 2020, en mitad de una pandemia, porque hay decisiones que no pueden esperar.</p>
-      <p>Desde entonces me he formado en storytelling, Animación 3D y diseño gráfico. Hoy me dedico a lo que de verdad me mueve: crear imágenes que cuenten algo, que se sientan, que duren.</p>
+      <p>Desde entonces me he formado en storytelling, animación 3D y diseño gráfico. Hoy me dedico a lo que de verdad me mueve: crear imágenes que cuenten algo, que se sientan, que duren.</p>
       <div class="sl-stats">
         <div class="stat"><div class="stat-n">100%</div><div class="stat-l">hecho a mano</div></div>
         <div class="sl-sep"></div>
@@ -377,8 +377,8 @@ footer span{color:var(--rosa)}
           <div class="fg"><label>Tamaño</label><select id="c-t" onchange="calcular()"><option value="a5">A5 (base)</option><option value="a4">A4 (+5 euros)</option><option value="a3">A3 (+10 euros)</option></select></div>
         </div>
         <div class="frow">
-          <div class="fg"><label>Orientacion</label><select id="c-o"><option>Vertical</option><option>Horizontal</option></select></div>
-          <div class="fg"><label>Fecha limite</label><select id="c-fe" onchange="calcular()"><option value="0">Sin fecha</option><option value="10">Más de 4 semanas (+10)</option><option value="20">Menos de 4 semanas (+20)</option></select></div>
+          <div class="fg"><label>Orientación</label><select id="c-o"><option>Vertical</option><option>Horizontal</option></select></div>
+          <div class="fg"><label>Fecha límite</label><select id="c-fe" onchange="calcular()"><option value="0">Sin fecha</option><option value="10">Más de 4 semanas (+10)</option><option value="20">Menos de 4 semanas (+20)</option></select></div>
         </div>
         <div class="presup">
           <p class="eye2">Precio estimado</p>
@@ -415,7 +415,7 @@ footer span{color:var(--rosa)}
         <p style="color:white;font-size:1rem;font-weight:800;text-align:center;margin-bottom:1.4rem;letter-spacing:.04em">Elige tu pack</p>
         <div class="logo-tipos" id="logo-tipos">
           <div class="logo-tipo sel" onclick="selLogoTipo(this,'basico',120)">
-            <h4>Basico</h4>
+            <h4>Básico</h4>
             <p>Logotipo + paleta de color y tipografía</p>
             <div class="lprecio">120 euros</div>
           </div>
@@ -448,9 +448,9 @@ footer span{color:var(--rosa)}
         </div>
         <div class="frow">
           <div class="fg"><label>Nombre del negocio</label><input type="text" id="lo-neg" placeholder="Ej: Mi Tienda Bonita"/></div>
-          <div class="fg"><label>Sector</label><input type="text" id="lo-sec" placeholder="Ej: moda, gastronomia..."/></div>
+          <div class="fg"><label>Sector</label><input type="text" id="lo-sec" placeholder="Ej: moda, gastronomía..."/></div>
         </div>
-        <div class="fg"><label>¿Qué valores transmite tu marca?</label><textarea id="lo-m" placeholder="Describe tu proyecto: a quién va dirigido, qué te diferencia, colores que te gustan, referencias de logos que te inspiran…"></textarea></div>
+        <div class="fg"><label>¿Qué valores transmite tu marca?</label><textarea id="lo-m" placeholder="Describe tu proyecto: a quién va dirigido, qué te diferencia, colores que te gustan, referencias..."></textarea></div>
         <button class="br" style="width:100%;text-align:center;padding:1rem" onclick="enviarLogo()">Enviar encargo de logo</button>
         <div class="fsuc" id="lo-ok">¡Encargo de logo recibido! Te preparo una propuesta.</div>
       </div>
@@ -499,7 +499,7 @@ footer span{color:var(--rosa)}
 <!-- CARRITO -->
 <div class="cov" id="cov" onclick="toggleCart()"></div>
 <div class="cpanel" id="cpanel">
-  <div class="chd"><h3>Tu seleccion</h3><button class="bx" onclick="toggleCart()">&#10005;</button></div>
+  <div class="chd"><h3>Tu selección</h3><button class="bx" onclick="toggleCart()">&#10005;</button></div>
   <div class="cbody" id="cbody"><p class="cempty">Tu carrito está vacío.</p></div>
   <div class="cft">
     <div class="trow"><span>Total</span><span id="ctotal">0,00 euros</span></div>
@@ -528,9 +528,9 @@ function getP(o,t,m){return 20+pLam[t]+(m==='si'?pMarco[t]:0);}
 
 const rec=[
   {id:"r1",tit:"Boda",        ico:"💍",desc:"Diseño romántico. Nombre de los novios, fecha y lugar en papel premium.",   p:{10:35,25:60,50:100,100:180}},
-  {id:"r2",tit:"Comunion",    ico:"✝️",desc:"Diseño delicado. Personalizable con nombre, fecha e imagen.",               p:{10:30,25:55,50:90,100:160}},
+  {id:"r2",tit:"Comunión",    ico:"✝️",desc:"Diseño delicado. Personalizable con nombre, fecha e imagen.",               p:{10:30,25:55,50:90,100:160}},
   {id:"r3",tit:"Bautizo",     ico:"🕊️",desc:"Diseño tierno para dar la bienvenida al bebé.",                            p:{10:30,25:55,50:90,100:160}},
-  {id:"r4",tit:"Confirmacion",ico:"🕯️",desc:"Diseño espiritual y cuidado. Personalizable con nombre y fecha.",          p:{10:30,25:55,50:90,100:160}},
+  {id:"r4",tit:"Confirmación",ico:"🕯️",desc:"Diseño espiritual y cuidado. Personalizable con nombre y fecha.",          p:{10:30,25:55,50:90,100:160}},
 ];
 
 let carrito=[],filtro='todos',obraA=null,logoPrecioBase=120;
@@ -647,12 +647,12 @@ function toggleCart(){document.getElementById('cov').classList.toggle('op');docu
 
 // ── FORMULARIOS ──
 function enviarEncargo(){
-  if(!document.getElementById('il-n').value.trim()||!document.getElementById('il-e').value.trim()||!document.getElementById('il-m').value.trim()){alert('Rellena nombre, correo y descripcion.');return;}
+  if(!document.getElementById('il-n').value.trim()||!document.getElementById('il-e').value.trim()||!document.getElementById('il-m').value.trim()){alert('Rellena nombre, correo y descripción.');return;}
   document.getElementById('il-ok').style.display='block';
   ['il-n','il-e','il-o','il-ref','il-m'].forEach(id=>document.getElementById(id).value='');
 }
 function enviarLogo(){
-  if(!document.getElementById('lo-n').value.trim()||!document.getElementById('lo-e').value.trim()||!document.getElementById('lo-m').value.trim()){alert('Rellena nombre, correo y descripcion del proyecto.');return;}
+  if(!document.getElementById('lo-n').value.trim()||!document.getElementById('lo-e').value.trim()||!document.getElementById('lo-m').value.trim()){alert('Rellena nombre, correo y descripción del proyecto.');return;}
   document.getElementById('lo-ok').style.display='block';
   ['lo-n','lo-e','lo-neg','lo-sec','lo-m'].forEach(id=>document.getElementById(id).value='');
 }
